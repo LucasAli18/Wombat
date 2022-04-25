@@ -110,7 +110,8 @@ header img{
 
 .main_index{
     overflow: hidden;
-    height: 71vh
+    height: 71vh;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.281), #f7e9d9, rgb(245, 188, 142));
     
 }
 
