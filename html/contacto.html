@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/wombatlogo.png">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous"/>
+    <title>Wombat Showroom</title>
+</head>
+<body class="contenedor">
+    <div class="header">
+    <header>
+        <figure>
+        <img src="../img/wombatlogo.png" alt="">
+         </figure>
+        <h1>Wombat Showroom</h1>
+        
+    </header>
+    <nav class="nav"><!--Barra de navegación-->
+        <ul class="responsive">
+            <li class="responsive__li"><i class="fas fa-bars"></i>
+                <ul class="nav__ul">
+                    <li class="nav__li"><a href="../index.html">Inicio</a></li>
+                    <li class="nav__li"><a href="nosotros.html">Sobre Nosotros</a></li>
+                    <li class="nav__li"><a href="catalogo.html">Catalogo</a>
+                        <ul class="desplegable">
+                            <li class="desplegable_li"><a href="catalogo.html">Pantalón</a></li>
+                            <li class="desplegable_li"><a href="catalogo.html">Remera</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__li"><a href="contacto.html">Contacto</a></li>
+                    <li class="nav__li"><a href="ubicación.html">Ubicación</a></li>
+                </ul> 
+            </li>
+        </ul>
+    </nav>
+    </div>
+    <main class="main_contacto">
+        <section class="sect_contacto">
+
+            <article class="art_contacto art1">
+                <figure>
+                        <img src="../img/wombatlogo.png" alt="">
+                </figure>    
+            </article>
+            <article class="art_contacto">
+                <form class="formulario" action="contacto.html">
+                    <label class="formulario__label" for="nombre">Nombre</label>
+                    <input class="formulario__input" name="nombre" type="text">
+
+                    <label class="formulario__label" for="telefono">Telefono</label>
+                    <input class="formulario__input" nombre="telefono" type="number">
+                    
+                    <label class="formulario__label" for="email">E-mail</label>
+                    <input class="formulario__input" name="email" type="email">
+                    
+                    
+                    <label class="formulario__label" for="nombre">Provincia</label>
+                    <input class="formulario__input" type="text">
+
+                    <label class="formulario__label" for="nombre">Forma de contacto</label>
+                    <select type="">
+                        <option value="telefono">
+                            Telefono
+                        </option>
+                        <option value="email">
+                            Email
+                        </option>
+                    </select>
+                    <div class="genero">
+                    <label class="formulario__label--sexo" for="sexo">Sexo: </label>
+                    <input class="formulario__input--sexo" name="sexo" type="radio" value="hombre">
+                    <label class="formulario__label--sexo" for="sexo">Hombre</label>
+                    <input class="formulario__input--sexo" name="sexo" type="radio" value="mujer">
+                    <label class="formulario__label--sexo" for="sexo">Mujer</label>
+                    </div>
+                    <label class="formulario__label" for="textarea">Opinión</label>
+                    <textarea name="textarea"></textarea>
+                    <div class="condiciones">
+                    <input class="formulario__input--checkbox" name="terminos" type="checkbox">
+                    <label class="formulario__label--checkbox" for="terminos">Acepta terminos y condiciones</label>
+                    </div>
+                    <div class="botones">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Reset</button>
+                    </div>        
+                </form>
+            </article>
+            <article class="art_contacto art1">
+                <figure>
+                    <img src="../img/wombatlogo.png" alt="">
+                </figure>
+            </article>
+        </section>
+                    
+    </main>
+    <footer>    
+        <ul>
+
+            <li>
+                <h2><em>Contacto</em></h2>
+                <a href="https://wa.me/+543816239922" target="_blank"><p>3816239922</p></a>
+                <a href="mailto:wombatshorwoom@gmail.com"><p>wombatshowroom@gmail.com</p></a>
+            </li>
+
+            <li>
+                <h2>Redes sociales</h2>
+                <p><a href="https://www.instagram.com/wombat.showroom/" target="_blank">Instagram</a></p>
+                <p><a href="https://www.facebook.com/wombat.showroom.9/" target="_blank">Facebook</a></p>
+           </li>
+
+            <li>
+                <h2>Ayuda</h2>
+                <p><a href="https://wa.me/+543816239922" target="_blank">Asistencia online</a></p>
+                <p><a href="https://wa.me/+543816239922" target="_blank">Cambios</a></p>
+            </li>
+
+        </ul>
+</footer>
+</body>
+</html>
