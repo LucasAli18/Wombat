@@ -1,81 +1,124 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/wombatlogo.png">
-    <link rel="stylesheet" href="css/estilo.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous"/>
-    <title>Wombat Showroom</title>
-</head>
-<body class="contenedor">
-    <div class="header">
-    <header>
-        <figure>
-        <img src="img/wombatlogo.png" alt="">
-         </figure>
-        <h1>Wombat Showroom</h1>
-        
-    </header>
-    <nav class="nav"><!--Barra de navegación-->
-        <ul class="responsive">
-            <li class="responsive__li"><i class="fas fa-bars"></i>
-                <ul class="nav__ul">
-                    <li class="nav__li"><a href="index.html">Inicio</a></li>
-                    <li class="nav__li"><a href="html/nosotros.html">Sobre Nosotros</a></li>
-                    <li class="nav__li"><a href="html/catalogo.html">Catalogo</a>
-                        <ul class="desplegable">
-                            <li class="desplegable_li"><a href="html/catalogo.html">Pantalón</a></li>
-                            <li class="desplegable_li"><a href="html/catalogo.html">Remera</a></li> 
-                        </ul>
-                    </li>
-                    <li class="nav__li"><a href="html/contacto.html">Contacto</a></li>
-                    <li class="nav__li"><a href="html/ubicación.html">Ubicación</a></li>
-                </ul> 
-            </li>
-        </ul>
-    </nav>
-    </div>
-    <main class="main_index"> 
-        <section class="section_index">
-
-            <article class="article_index">
-                <figure class="ropa1">
-               <img src="img/Lisas.jpg" alt="remeras lisas" title="Remeras mangas cortas">
-                </figure>
-               <figure class="ropa2">
-               <img src="img/Wild Life.jpg" alt="remeras lisas" title="Remeras mangas cortas">
-            </figure>
-            <figure class="ropa3">    
-            <img src="img/Lisas.jpg" alt="remeras estampadas" title="Remeras mangas cortas">
-        </figure>
-        <figure class="ropa4">
-            <img src="img/Wild Life.jpg" alt="remeras estampadas" title="Remeras mangas cortas">
-               </figure>
-            </article>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <section class="container-fluid">
+          <a class="navbar-brand" href="#"> <img src="img/wombatlogo.png" alt=""> Wombat Showroom</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <article class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="html/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="html/catalogo.html">Catalogo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="html/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="html/ubicación.html">Ubicación</a>
+              </li>
+      
+            </ul>
+          </article>
         </section>
-    </main>
-    <footer class="footer_index">  
-            <ul>
+      </nav>
+    <main class="main_index"> 
 
-                <li>
+
+            <section id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+              <article class="carousel-inner">
+                <figure class="carousel-item active" data-bs-interval="1000">
+                  <img src="img/ropa1.jpg" class="d-inline-block w-100" alt="...">
+                </figure>
+                <figure class="carousel-item" data-bs-interval="2000">
+                  <img src="img/ropa2.jpg" class="d-inline-block w-100" alt="...">
+                </figure>
+                <article class="carousel-item">
+                  <img src="img/ropa3.jpg" class="d-inline-block w-100" alt="...">
+                </article>
+              </article>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </section>
+
+            <section class="d-flex flex-row flex-wrap remera">
+
+              <article class="col-xxl-8 col-xl-7 texto1">
+                <h2>Remera Basica</h2>
+                <p>La remera es una prenda básica de todos los días y muy versatil. La podés usar de entrecasa, en el trabajo debajo de la camisa, con unos jeans o bermudas para salir a comer un brunch un domingo y también para salir a la noche. Por eso necesitás una camiseta elegante, de la más alta calidad y que se adapte a vos.
+
+                  Hecho con el mejor algodón (100%). Diseñado y fabricado en Argentina. </p>
+
+              </article>
+
+              <article class="imagenes"> 
+                        
+                  <div class="box-img">
+                    <figure>
+                      <img src="img/ropa1.jpg" alt="remeras lisas" title="Remeras mangas cortas">    
+                    </figure>     
+                  </div>
+
+                  <div class="box-img">
+                    <figure>
+                      <img src="img/fondo.jpg" alt="remeras lisas" title="Remeras mangas cortas">    
+                    </figure>     
+                  </div>
+
+                  <div class="box-img">
+                    <figure>
+                      <img src="img/ropa3.jpg" alt="remeras lisas" title="Remeras mangas cortas">    
+                    </figure>     
+                  </div>
+
+                  <div class="box-img">
+                    <figure>
+                      <img src="img/ropa2.jpg" alt="remeras lisas" title="Remeras mangas cortas">    
+                    </figure>     
+                  </div>
+                            
+              </article>
+            
+            </section>
+
+    </main>
+    <footer class="row">  
+            <ul class="d-flex flex-row flex-wrap col-12">
+
+                <li class="col-xxl-4 col-xl-4 col-lg-5 col-md-6 col-sm-12 col-12">
                     <h2>Contacto</h2>
-                    <a href="https://wa.me/+543816239922" target="_blank"><p>3816239922</p></a>
+                    <a href="https://wa.me/+543816239922" target="_blank"><p>Whatsapp</p></a>
                     <a href="mailto:wombatshorwoom@gmail.com"><p>wombatshowroom@gmail.com</p></a>
                 </li>
 
-                <li>
+                <li class="col-xxl-4 col-xl-4 col-lg-3 col-md-3 col-sm-12 col-12">
                     <h2>Redes sociales</h2>
                     <p><a href="https://www.instagram.com/wombat.showroom/" target="_blank">Instagram</a></p>
                     <p><a href="https://www.facebook.com/wombat.showroom.9/" target="_blank">Facebook</a></p>
                </li>
 
-                <li>
+                <li class="col-xxl-4 col-xl-4 col-lg-3 col-md-3 col-sm-12 col-12">
                     <h2>Ayuda</h2>
                     <p><a href="https://wa.me/+543816239922" target="_blank">Asistencia online</a></p>
                     <p><a href="https://wa.me/+543816239922" target="_blank">Cambios</a></p>
@@ -83,5 +126,7 @@
 
             </ul>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
