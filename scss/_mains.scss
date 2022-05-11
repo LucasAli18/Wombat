@@ -1,17 +1,14 @@
-
 /*PAG PRINCIPAL*/
 
 .main_index{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(../img/fondomadera.jpg);
 
     section{
     margin: 15em 2em;
-    background-color: #f3dbc3ef;
     padding: 1em;
-    box-shadow: mpx 0px 10px 5px rgba(0,0,0,0.33);
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.33);
     align-items: center;
         }
 
@@ -75,6 +72,19 @@
 }
 
 /**CONTACTO**/
+
+.btn--enviar{
+    margin: .3em;
+    padding: .5em;
+    font-size: 1em;
+    background-color: map-get($paletalogo , marron3 );
+    border: .5px solid #ccc;
+}
+
+.btn--reset{
+    @extend .btn--enviar;
+    background-color: rgba(0, 255, 255, 0.514);
+}
 
 .main_contacto{
     align-items: center;
