@@ -1,0 +1,82 @@
+/* CARD DE LA PRENDA MAS VENDIDA */
+
+.remera{
+    position: relative;
+    overflow: hidden;
+    margin: 5em 5em 5em 1em;
+    align-items: center;
+    padding: 1em;
+    box-shadow: $sombra;
+        p{
+            letter-spacing: 4px;
+        font-size: 1.4em;
+        }
+
+    &:before{
+        content: '';
+        @include sizes(200px, 200px);
+        border-radius: 50%;
+        background-color: map-get($paletalogo , marron2);
+        position: absolute;
+        top: -5em;
+        left: -5em;
+        z-index: -10;
+    }
+
+    &:after{
+        content: '';
+        @include sizes(200px, 200px);
+        border-radius: 50%;
+        background-color: map-get($paletalogo , marron2);
+        position: absolute;
+        bottom: -5em;
+        right: -5em;
+        z-index: -10;
+    }
+}
+/* CARD DE LAS PRENDAS QUE VENDEMOS */
+.section_index{
+    margin: 1em auto;
+}
+
+.catalogo_index{
+    justify-content: center;
+    figure{
+        position: relative;
+        margin: .5em;
+        width: 30%;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    figcaption{
+        position: absolute;
+        bottom: 1em;
+        left: 20%;
+        right: 50%;
+        background-color: rgb(255, 255, 255);
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+        border: .1em solid;
+        
+        &:hover{
+            transition: all 1s ease;
+            background-color: black;
+        }
+        a{
+            font-size: 1.5em;
+            font-weight: 300;
+            text-decoration: none;
+            color: black;
+            padding: .3em;
+            letter-spacing: .1em;
+            &:hover{
+                color: white;
+                transition: all 1s ease;
+            }
+        }
+    }
+}
+    

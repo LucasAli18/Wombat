@@ -1,3 +1,4 @@
+/* CONFIGURAR NAVBAR */
 .navbar{
     background-color: map-get($paletalogo , marron1 ) !important;
 
@@ -5,12 +6,24 @@
          img{
             width: 7%;
             margin-top: .5rem;
-
-            a{
-    font-size: 1.5rem;
-            }
-    }
+        }
 } 
+
+
+.navbar-brand{
+    font-size: 1.5em;
+    font-weight: 600;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.nav-item{
+    a{
+        font-size: 1.2em;
+    }
+}
+
+/* CONFIG DEL FOOTER */
+
     footer{
         background-color: map-get($paletalogo , marron2 );
         padding: 0;

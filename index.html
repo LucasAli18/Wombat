@@ -6,6 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <title>Wombat Showroom</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
         <meta name="description" content="Encontramos una vista previa de la ropa masculina, que se puede encontrar en el showroom.">
         <meta name="keywords" content="Ropa, Moda, Pantalon, Remera, Buzo, Campera">
         <link rel="stylesheet" href="css/style.css">
@@ -13,7 +16,7 @@
     <body>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <section class="container-fluid">
-          <a class="navbar-brand" href="#"> <img src="img/wombatlogo.png" alt="logo wombat" title="logo wombat"> Wombat Showroom</a>
+          <a class="navbar-brand" href="#"> <img src="img/wombatlogo.png" alt="logo wombat" title="logo wombat"> WOMBAT SHOWROOM</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -25,8 +28,15 @@
               <li class="nav-item">
                 <a class="nav-link" href="html/nosotros.html">Nosotros</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="html/catalogo.html">Catalogo</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Catalogo
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="html/catalogo_remera.html">Remera</a></li>
+                  <li><a class="dropdown-item" href="html/catalogo_pantalon.html">Pantalon</a></li>
+                  <li><a class="dropdown-item" href="html/catalogo_abrigo.html">Abrigo</a></li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="html/contacto.html">Contacto</a>
@@ -40,19 +50,19 @@
         </section>
       </nav>
     <main class="main_index"> 
-      <h1>Wombat Showroom</h1>
+      <h1>Inicio</h1>
 
             <section id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
               <article class="carousel-inner">
                 <figure class="carousel-item active" data-bs-interval="1000">
-                  <img src="img/ropa1.jpg" class="d-inline-block w-100" alt="...">
+                  <img src="img/SW_lanilla_varios.jpg" class="d-inline-block w-100" alt="...">
                 </figure>
                 <figure class="carousel-item" data-bs-interval="2000">
-                  <img src="img/ropa2.jpg" class="d-inline-block w-100" alt="...">
+                  <img src="img/SW_lanilla_varios1.jpg" class="d-inline-block w-100" alt="...">
                 </figure>
-                <article class="carousel-item">
-                  <img src="img/ropa3.jpg" class="d-inline-block w-100" alt="...">
-                </article>
+                <figure class="carousel-item">
+                  <img src="img/SW_algodo_varios.jpg" class="d-inline-block w-100" alt="...">
+                </figure>
               </article>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -67,7 +77,8 @@
             <section class="d-flex flex-row flex-wrap remera">
 
               <article class="col-xxl-8 col-xl-7 texto1">
-                <h2>Remera Basica</h2>
+                <h2>Prenda mas vendida en la semana</h2>
+                <h3>Remera con botones</h3>
                 <p>La remera es una prenda básica de todos los días y muy versatil. </p>
 
               </article>
@@ -75,7 +86,7 @@
                         
                   <div class="box-img">
                     <figure>
-                      <img src="img/ropa1.jpg" alt="remeras lisas" title="Remeras mangas cortas">    
+                      <img src="img/Rem_boton_A.jpg" alt="remeras lisas" title="Remeras mangas cortas">    
                     </figure>     
                   </div>
 
@@ -87,19 +98,57 @@
 
                   <div class="box-img">
                     <figure>
-                      <img src="img/ropa3.jpg" alt="remeras lisas" title="Remeras mangas cortas">    
+                      <img src="img/Rem_boton_B.jpg" alt="remeras lisas" title="Remeras mangas cortas">    
                     </figure>     
                   </div>
 
                   <div class="box-img">
                     <figure>
-                      <img src="img/ropa2.jpg" alt="remeras lisas" title="Remeras mangas cortas">    
+                      <img src="img/Rem_boton_G.jpg" alt="remeras lisas" title="Remeras mangas cortas">    
                     </figure>     
                   </div>
                             
               </article>
             
             </section>
+
+            <section class="row section_index">
+
+              <article class="catalogo_index d-flex justify-content-arround flex-wrap flex-row flex-sm-row flex-md-row flex-lg-row flex-xl-row flex-xxl-row">
+                  <figure>
+                    <img class="img-fluid" src="img/SW_lanilla_G.jpg" width="383px" height="493px" alt="sweatter de lanilla color gris" title="Sweater de lanilla">
+                      <figcaption><a href="html/catalogo_abrigo.html">Sweatter Lanilla</a></figcaption>
+                  </figure>
+
+                  <figure>
+                    <img class="img-fluid" src="img/Rem_boton_VA.jpg" width="383px" height="493px" alt="Remera con botones verde aqua" title="Remera con botones">
+                      <figcaption><a href="html/catalogo_remera.html">Remera</a></figcaption>
+                  </figure>
+
+                  <figure>
+                    <img class="img-fluid" src="img/jogger_V.jpg" width="383px" height="493px" alt="jogger de gabardina color verde" title="Jogger verde">
+                      <figcaption><a href="html/catalogo_pantalon.html">Jogger</a></figcaption>
+                  </figure>
+
+                  <figure>
+                    <img class="img-fluid" src="img/Bermuda_C.jpg" width="383px" height="493px" alt="Bermuda Camel" title="Bermuda Camel">
+                      <figcaption><a href="html/catalogo_pantalon.html">Bermuda</a></figcaption>
+                  </figure>
+
+                  <figure>
+                    <img class="img-fluid" src="img/Campera_C.jpg" width="383px" height="493px" alt="Campera Coral" title="Campera Coral">
+                      <figcaption><a href="html/catalogo_abrigo.html">Campera</a></figcaption>
+                  </figure>
+
+                  <figure>
+                    <img class="img-fluid" src="img/SW_algodon_N.jpg" width="383px" height="493px" alt="Sweatter Naranja" title="Sweatter Naranja">
+                      <figcaption><a href="html/catalogo_abrigo.html">Sweatter Algodon</a></figcaption>
+                  </figure>
+
+              </article>
+            
+            </section>
+
 
     </main>
     <footer class="col-12">  

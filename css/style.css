@@ -1,3 +1,6 @@
+@charset "UTF-8";
+/* COLOCO LAS VARIABLES */
+/* CONFIGURAR NAVBAR */
 .navbar {
   background-color: #f3dbc362 !important;
 }
@@ -7,10 +10,17 @@
   margin-top: .5rem;
 }
 
-.navbar img a {
-  font-size: 1.5rem;
+.navbar-brand {
+  font-size: 1.5em;
+  font-weight: 600;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 
+.nav-item a {
+  font-size: 1.2em;
+}
+
+/* CONFIG DEL FOOTER */
 footer {
   background-color: #f3dbc3ef;
   padding: 0;
@@ -36,21 +46,24 @@ footer a {
   align-items: center;
 }
 
-.main_index section {
-  margin: 15em 2em;
-  padding: 1em;
-  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.33);
-  align-items: center;
-}
-
-.main_index p {
-  letter-spacing: 4px;
-  font-size: 1.4em;
+.main_index h1 {
+  text-decoration: underline;
 }
 
 /* NOSOTROS */
+.main_nos h1 {
+  margin: .5em 0 0 1em;
+  text-decoration: underline;
+}
+
 .main_nos h2 {
   margin: 1em 0 0 1em;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 2em;
+}
+
+.main_nos p {
+  font-family: 'Nanum Gothic', sans-serif;
 }
 
 .section_nos {
@@ -61,6 +74,22 @@ footer a {
 }
 
 /**CATALOGO**/
+.main_cat h1 {
+  margin: .5em .5em;
+  text-decoration: underline;
+  font-size: 3em;
+}
+
+.main_cat h2 {
+  margin: 1em;
+  text-decoration: underline;
+}
+
+.main_cat h3 {
+  margin: 2em;
+  text-decoration: underline;
+}
+
 .ropa {
   display: flex;
   flex-wrap: wrap;
@@ -86,27 +115,24 @@ footer a {
 }
 
 /* UBICACION */
-.ubicacion {
-  background-image: url(../img/ubicacion3.jpg);
-  background-repeat: no-repeat;
-  background-size: small;
+.ubicacion h1 {
+  margin: .5em;
+  text-decoration: underline;
 }
 
 /**CONTACTO**/
-.btn--enviar, .btn--reset {
-  margin: .3em;
-  padding: .5em;
-  font-size: 1em;
-  background-color: #ffdea1;
-  border: .5px solid #ccc;
-}
-
-.btn--reset {
-  background-color: rgba(0, 255, 255, 0.514);
-}
-
 .main_contacto {
   align-items: center;
+}
+
+.main_contacto h1 {
+  margin: .5em;
+  text-decoration: underline;
+}
+
+.main_contacto h2 {
+  margin: 1em;
+  text-decoration: underline;
 }
 
 .section_nos {
@@ -119,6 +145,22 @@ form {
   margin: 1em;
 }
 
+/* BOTON DE ENVIAR Y RESET */
+.btn--enviar, .btn--reset {
+  margin: .3em;
+  padding: .5em;
+  font-size: 1em;
+  background-color: #ffdea1;
+  border: .5px solid #ccc;
+}
+
+.btn--reset {
+  background-color: #ffdea1;
+}
+
+/* --------------------------- */
+/* MIXIN PARA TAMAÑOS */
+/* CARD USUARIO CON INFORMACION DE LOS DUEÑOS */
 .body {
   display: flex;
   flex-direction: column;
@@ -274,15 +316,17 @@ form {
   font-size: 1.5em;
 }
 
+/* CONFIG DE CARROUSEL */
 .slide {
   width: 50%;
+  margin: 2em auto;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
 }
 
 .carousel-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
 }
 
 .imagenes {
@@ -322,7 +366,118 @@ form {
   grid-column-start: span 1;
 }
 
-@media screen and (max-width: 991.25px) {
+/* CARD DE LA PRENDA MAS VENDIDA */
+.remera {
+  position: relative;
+  overflow: hidden;
+  margin: 5em 5em 5em 1em;
+  align-items: center;
+  padding: 1em;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+}
+
+.remera p {
+  letter-spacing: 4px;
+  font-size: 1.4em;
+}
+
+.remera:before {
+  content: '';
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #f3dbc3ef;
+  position: absolute;
+  top: -5em;
+  left: -5em;
+  z-index: -10;
+}
+
+.remera:after {
+  content: '';
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #f3dbc3ef;
+  position: absolute;
+  bottom: -5em;
+  right: -5em;
+  z-index: -10;
+}
+
+/* CARD DE LAS PRENDAS QUE VENDEMOS */
+.section_index {
+  margin: 1em auto;
+}
+
+.catalogo_index {
+  justify-content: center;
+}
+
+.catalogo_index figure {
+  position: relative;
+  margin: .5em;
+  width: 30%;
+}
+
+.catalogo_index img {
+  width: 100%;
+  height: 100%;
+}
+
+.catalogo_index figcaption {
+  position: absolute;
+  bottom: 1em;
+  left: 20%;
+  right: 50%;
+  background-color: white;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  border: .1em solid;
+}
+
+.catalogo_index figcaption:hover {
+  transition: all 1s ease;
+  background-color: black;
+}
+
+.catalogo_index figcaption a {
+  font-size: 1.5em;
+  font-weight: 300;
+  text-decoration: none;
+  color: black;
+  padding: .3em;
+  letter-spacing: .1em;
+}
+
+.catalogo_index figcaption a:hover {
+  color: white;
+  transition: all 1s ease;
+}
+
+/* CONFIG DE LA PAGINA PARA TELEFONO */
+@media all and (max-width: 760px) {
+  .navbar-brand {
+    font-size: 1.2em;
+  }
+  .ropa figure {
+    width: 100%;
+  }
+  footer {
+    height: 52vh;
+  }
+  /* TAMAÑO DE LAS IMAGENES EN EL CELULAR */
+  .catalogo_index figure {
+    width: 100%;
+  }
+  .catalogo_index figcaption {
+    left: 20%;
+  }
+}
+
+/* MODIFICACION AL NAVBAR PARA TELEFONO */
+@media all and (max-width: 991.25px) {
   nav a img {
     display: none;
   }
@@ -331,22 +486,13 @@ form {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media all and (max-width: 1200px) {
+  .catalogo_index figcaption {
+    left: 20%;
+  }
   .imagenes {
     width: 100%;
   }
-}
-
-@media all and (max-width: 760px) {
-  .ropa figure {
-    width: 100%;
-  }
-  footer {
-    height: 52vh;
-  }
-}
-
-@media all and (max-width: 1200px) {
   /*NOSOTROS*/
   .section_nos {
     display: flex;
@@ -354,6 +500,7 @@ form {
     align-items: center;
     flex-wrap: wrap;
   }
+  /* ACOMODAR LA CARD USUARIO PARA TELEFONO */
   .body {
     display: flex;
     flex-direction: column;

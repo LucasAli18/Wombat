@@ -1,8 +1,9 @@
+/* MIXIN PARA TAMAÑOS */
 @mixin sizes ($width, $height) {
     width: $width;
     height: $height;
 }
-
+/* CARD USUARIO CON INFORMACION DE LOS DUEÑOS */
 .body{
     display: flex;
     flex-direction: column;
