@@ -1,28 +1,24 @@
 /*PAG PRINCIPAL*/
-
 .main_index{
     display: flex;
     flex-direction: column;
     align-items: center;
-    h1{
-        text-decoration: underline;
-    }
 }
-
 
 /* NOSOTROS */
 .main_nos{
     h1{
         margin: .5em 0 0 1em;
-        text-decoration: underline;
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: center;
     }
     h2{
         margin: 1em 0 0 1em;
-        font-family: 'Nanum Gothic', sans-serif;
+        font-family: 'Josefin Sans', sans-serif;
         font-size: 2em;
         }
-        p{
-            font-family: 'Nanum Gothic', sans-serif;
+    p{
+        font-family: 'Josefin Sans', sans-serif;
         }
 }
 
@@ -31,23 +27,28 @@
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: space-around;
+    img{
+        border-radius: $redondo;
+    }
 }
-
+.card{
+    width: 60%;
+}
 /**CATALOGO**/
 
 .main_cat{
+    *{
+        font-family: 'Josefin Sans', sans-serif;
+    }
     h1{
         margin: .5em .5em;
-        text-decoration: underline;
         font-size: 3em;
-    }
-    h2{
-        margin: 1em ;
-        text-decoration: underline;
+        text-align: center;
     }
     h3{
         margin: 2em;
-        text-decoration: underline;
+        color: #555;
     }
 }
 
@@ -57,12 +58,12 @@
 
  figure
         {
-    width: 40%;
+    width: 23%;
     background-color: rgba(255, 255, 255, 0.623);
     padding: 2em;
     text-align: center;
     box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.288);
-    margin: 2em;
+    margin: 2em auto;
     img
     {
     width: 100%;
@@ -72,8 +73,10 @@
         }
     figcaption
     {
-    font-size: 1.3em;
+        font-size: 1.3em;
+        letter-spacing: .02em;
     }
+
 
     }
 
@@ -83,43 +86,20 @@
     
     h1{
         margin: .5em;
-        text-decoration: underline;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    p{
+        font-family: 'Josefin Sans', sans-serif;
     }
 }
 
 /**CONTACTO**/
 .main_contacto{
-    align-items: center;
     h1{
         margin: .5em;
-        text-decoration: underline;
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: center;
+        font-weight: 600;
+        font-size: 2.2em;
     }
-    h2{
-        margin: 1em;
-        text-decoration:underline;
-    }
 }
-
-.section_nos{
-    justify-content: space-between;
-}
-
-form{
-    height: 100%;
-    padding: 2em;
-    margin: 1em;
-}
-/* BOTON DE ENVIAR Y RESET */
-.btn--enviar{
-    margin: .3em;
-    padding: .5em;
-    font-size: 1em;
-    background-color: map-get($paletalogo , marron3 );
-    border: .5px solid #ccc;
-}
-
-.btn--reset{
-    @extend .btn--enviar;
-    background-color: map-get($paletalogo , marron3 );
-}
-/* --------------------------- */

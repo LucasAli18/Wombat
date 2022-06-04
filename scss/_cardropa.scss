@@ -1,12 +1,52 @@
-/* CARD DE LA PRENDA MAS VENDIDA */
+/* CARD DE LA PRENDA MAS VENDIDA PAG INDEX*/
 
 .remera{
     position: relative;
     overflow: hidden;
-    margin: 5em 5em 5em 1em;
+    margin: 5em auto;
     align-items: center;
     padding: 1em;
     box-shadow: $sombra;
+    border-radius: $redondo;
+    width: 90%;
+    .texto1{
+        h3{
+            color: rgb(17, 113, 126);
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+    .imagenes{
+        @include sizes(30%, 30%);
+        display: grid;
+        grid-template-columns: 1fr 1fr .5fr;
+        grid-template-rows: 200px 100px;
+        grid-gap: 10px;
+    
+        .box-img{ 
+        figure{
+            @include sizes(100%, 100%);
+        }
+        img{
+            @include sizes(100%, 100%);
+            border-radius: $redondo;
+            object-fit: cover;
+            &:hover{
+                opacity: .8;
+            }
+        }
+        &:nth-child(1){
+            grid-column-start: span 2;
+        }
+        &:nth-child(2){
+            grid-row-start: span 2;
+        }
+        &:nth-child(3){
+            grid-column-start: span 1;
+        }
+        }
+    }
         p{
             letter-spacing: 4px;
         font-size: 1.4em;
@@ -34,7 +74,7 @@
         z-index: -10;
     }
 }
-/* CARD DE LAS PRENDAS QUE VENDEMOS */
+/* CARD DE LAS PRENDAS QUE VENDEMOS PAG INDEX*/
 .section_index{
     margin: 1em auto;
 }
@@ -45,10 +85,14 @@
         position: relative;
         margin: .5em;
         width: 30%;
+        height: 40vh;
     }
     img{
         width: 100%;
         height: 100%;
+        object-fit: cover;
+        object-position: top;
+        border-radius: $redondo;
     }
     figcaption{
         position: absolute;
@@ -64,6 +108,10 @@
         &:hover{
             transition: all 1s ease;
             background-color: black;
+            a{
+                color: white;
+                transition: all 1s ease;
+            }
         }
         a{
             font-size: 1.5em;
@@ -72,11 +120,6 @@
             color: black;
             padding: .3em;
             letter-spacing: .1em;
-            &:hover{
-                color: white;
-                transition: all 1s ease;
-            }
         }
     }
 }
-    

@@ -1,14 +1,17 @@
 /* CONFIGURAR NAVBAR */
 .navbar{
     background-color: map-get($paletalogo , marron1 ) !important;
-
-
          img{
             width: 7%;
             margin-top: .5rem;
         }
+        h1{
+            display: inline-block;
+            margin: auto;
+            vertical-align: middle;
+            font-family: 'Josefin Sans', sans-serif;
+        }
 } 
-
 
 .navbar-brand{
     font-size: 1.5em;
@@ -22,23 +25,83 @@
     }
 }
 
+.collapse{
+    border-radius: 1em;
+}
+.dropdown-menu{
+    background-color: #918f8f2d;
+    text-align: center;
+}
 /* CONFIG DEL FOOTER */
-
-    footer{
-        background-color: map-get($paletalogo , marron2 );
-        padding: 0;
-        height: 18vh;
-        padding-top: 1.5em;
-        box-sizing: content-box;
-    
-        ul{
-        list-style: none;
-    
-         }
-        a{
-        text-decoration: none;
-        color: black;
-        font-size: 1em;
+footer{
+    width: 100%;
+    padding: 50px 0px;
+    background-image: url(../img/svg2.png);
+    background-size: cover;
+    background-position: center;
+    border-top: .1em solid rgba(0, 0, 0, 0.322);
+    .container__footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: auto;
+          }
+    .box__footer{
+            display: flex;
+            flex-direction: column;
+            padding: 1em;
+            .logo img{
+                width: 180px;
+                border-radius: 50%;
+            }
+            h2{
+                margin-bottom: 30px;
+                color: #343434;
+                font-weight: 700;
+            }
+            a{
+                margin-top: 10px;
+                color: #7a7a7a;
+                font-weight: 600;
+                &:hover{
+                    opacity: 0.8;
+                }
+                .fab{
+                    font-size: 20px;
+                }
+                }
+            }
+        .redes{
+            a{
+                margin-top: 10px;
+                color: #7a7a7a;
+                font-weight: 600;
+                &:nth-of-type(1):hover{
+                    color: blue;
+                }
+                &:nth-of-type(2):hover{
+                    color: rgb(9, 214, 43);
+                }
+                &:nth-of-type(3):hover{
+                    color: rgb(255, 0, 106);
+                }
+                }
         }
         
+        .box__copyright{
+            max-width: 1200px;
+            margin: auto;
+            text-align: center;
+            padding: 0 40px;
+            p{
+                margin-top: 20px;
+                color: #7a7a7a;
+            }
+            hr{
+                border: none;
+                height: .01em;
+                background-color: #7a7a7a;
+            }
+        }
 }

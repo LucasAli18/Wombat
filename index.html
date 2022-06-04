@@ -8,7 +8,10 @@
         <title>Wombat Showroom</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,700&display=swap" rel="stylesheet">
+        <script defer src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+        <link rel="icon" href="img/wombatlogo.png">
         <meta name="description" content="Encontramos una vista previa de la ropa masculina, que se puede encontrar en el showroom.">
         <meta name="keywords" content="Ropa, Moda, Pantalon, Remera, Buzo, Campera">
         <link rel="stylesheet" href="css/style.css">
@@ -16,7 +19,7 @@
     <body>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <section class="container-fluid">
-          <a class="navbar-brand" href="#"> <img src="img/wombatlogo.png" alt="logo wombat" title="logo wombat"> WOMBAT SHOWROOM</a>
+          <a class="navbar-brand" href="#"> <img src="img/wombatlogo.png" alt="logo wombat" title="logo wombat"> <h1>WOMBAT SHOWROOM</h1></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -50,18 +53,17 @@
         </section>
       </nav>
     <main class="main_index"> 
-      <h1>Inicio</h1>
-
+            <!-- Carrousel -->
             <section id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
               <article class="carousel-inner">
                 <figure class="carousel-item active" data-bs-interval="1000">
-                  <img src="img/SW_lanilla_varios.jpg" class="d-inline-block w-100" alt="...">
+                  <img src="img/SW_lanilla_varios.jpg" class="d-inline-block w-100" alt="Sweatter lanilla">
                 </figure>
                 <figure class="carousel-item" data-bs-interval="2000">
-                  <img src="img/SW_lanilla_varios1.jpg" class="d-inline-block w-100" alt="...">
+                  <img src="img/SW_lanilla_varios1.jpg" class="d-inline-block w-100" alt="Sweatter lanilla">
                 </figure>
                 <figure class="carousel-item">
-                  <img src="img/SW_algodo_varios.jpg" class="d-inline-block w-100" alt="...">
+                  <img src="img/SW_algodo_varios.jpg" class="d-inline-block w-100" alt="Sweatter algodon">
                 </figure>
               </article>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -73,15 +75,17 @@
                 <span class="visually-hidden">Next</span>
               </button>
             </section>
-
+            <!-- TEXTO PRENDA MAS VENDIDA -->
             <section class="d-flex flex-row flex-wrap remera">
 
               <article class="col-xxl-8 col-xl-7 texto1">
-                <h2>Prenda mas vendida en la semana</h2>
-                <h3>Remera con botones</h3>
+                <h2>Ropa mas vendida en la semana</h2>
+                <br>
+                <h3><a href="html/catalogo_remera.html">Remera con botones</a></h3><br>
                 <p>La remera es una prenda básica de todos los días y muy versatil. </p>
 
               </article>
+              <!-- FOTOS CON GRID DE PRENDA MAS VENDIDA -->
               <article class="imagenes"> 
                         
                   <div class="box-img">
@@ -117,7 +121,7 @@
               <article class="catalogo_index d-flex justify-content-arround flex-wrap flex-row flex-sm-row flex-md-row flex-lg-row flex-xl-row flex-xxl-row">
                   <figure>
                     <img class="img-fluid" src="img/SW_lanilla_G.jpg" width="383px" height="493px" alt="sweatter de lanilla color gris" title="Sweater de lanilla">
-                      <figcaption><a href="html/catalogo_abrigo.html">Sweatter Lanilla</a></figcaption>
+                      <figcaption><a href="html/catalogo_abrigo.html">Sweater Lanilla</a></figcaption>
                   </figure>
 
                   <figure>
@@ -140,41 +144,51 @@
                       <figcaption><a href="html/catalogo_abrigo.html">Campera</a></figcaption>
                   </figure>
 
-                  <figure>
+                  <figure class="carduno">
                     <img class="img-fluid" src="img/SW_algodon_N.jpg" width="383px" height="493px" alt="Sweatter Naranja" title="Sweatter Naranja">
-                      <figcaption><a href="html/catalogo_abrigo.html">Sweatter Algodon</a></figcaption>
+                      <figcaption><a href="html/catalogo_abrigo.html">Sweater Algodon</a></figcaption>
                   </figure>
 
               </article>
             
             </section>
-
-
     </main>
-    <footer class="col-12">  
-            <ul class="d-flex flex-row flex-wrap .row ">
+    <footer>
+      <section class="container__footer">
+          <article class="box__footer box__logo">
+              <figure class="logo">
+                  <img src="img/wombatlogo.png" width="80px" height="150px" alt="Logo wombat">
+              </figure>
+          </article>
+          <article class="box__footer">
+              <h4>Soluciones</h4>
+              <a href="https://wa.me/+543816239922" target="_blank">Cambiar Prenda</a>
+              <a href="https://wa.me/+543816239922" target="_blank">Reportar problema</a>
+              <a href="https://wa.me/+543816239922" target="_blank">Ayuda</a>
+          </article>
 
-                <li class="col-xxl-4 col-xl-4 col-lg-5 col-md-4 col-sm-12 col-12">
-                    <h3>Contacto</h3>
-                    <a href="https://wa.me/+543816239922" target="_blank"><p>Whatsapp</p></a>
-                    <a href="mailto:wombatshorwoom@gmail.com"><p>Email</p></a>
-                </li>
+          <article class="box__footer">
+              <h4>Nosotros</h4>
+              <a href="html/nosotros.html">Nosotros</a>
+              <a href="html/catalogo_remera.html">Verano '21</a>
+              <a href="html/catalogo_abrigo.html">Invierno '22</a>            
+          </article>
 
-                <li class="col-xxl-4 col-xl-4 col-lg-3 col-md-4 col-sm-12 col-12">
-                    <h3>Redes sociales</h3>
-                    <p><a href="https://www.instagram.com/wombat.showroom/" target="_blank">Instagram</a></p>
-                    <p><a href="https://www.facebook.com/wombat.showroom.9/" target="_blank">Facebook</a></p>
-               </li>
+          <article class="box__footer redes">
+              <h4>Redes Sociales</h4>
+              <a href="https://www.facebook.com/wombat.showroom.9/" target="_blank"> <i class="fab fa-facebook-square"></i> Facebook</a>
+              <a href="https://wa.me/+543816239922" target="_blank"><i class="fab fa-whatsapp-square"></i> Whatsapp</a>
+              <a href="https://www.instagram.com/wombat.showroom/" target="_blank"><i class="fab fa-instagram-square"></i> Instagram</a>
+          </article>
 
-                <li class="col-xxl-4 col-xl-4 col-lg-3 col-md-4 col-sm-12 col-12">
-                    <h3>Ayuda</h3>
-                    <p><a href="https://wa.me/+543816239922" target="_blank">Asistencia online</a></p>
-                    <p><a href="https://wa.me/+543816239922" target="_blank">Cambios</a></p>
-                </li>
+      </section>
 
-            </ul>
-    </footer>
+      <section class="box__copyright">
+          <hr>
+          <p>Todos los derechos reservados © 2022 <b>Ali Lucas</b></p>
+      </section>
+  </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

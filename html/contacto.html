@@ -9,6 +9,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,700&display=swap" rel="stylesheet">
+        <script defer src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+        <link rel="icon" href="../img/wombatlogo.png">
         <meta name="description" content="Nos podemos contactar por medio de este formulario, para saber tu opinion sobre la ropa y el sitio web">
         <meta name="keywords" content="Ropa, Moda, Pantalon, Remera, Buzo, Campera">
         <link rel="stylesheet" href="../css/style.css">
@@ -16,7 +19,7 @@
     <body>
       <nav class="navbar navbar-expand-lg navbar-light bg-light $navbar-dark-color:rgba($white, .55);">
         <section class="container-fluid">
-          <a class="navbar-brand" href="#"> <img src="../img/wombatlogo.png" alt=""> WOMBAT SHOWROOM</a>
+          <a class="navbar-brand" href="#"> <img src="../img/wombatlogo.png" alt=""><h1>WOMBAT SHOWROOM</h1></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -50,82 +53,84 @@
         </section>
       </nav>
 
-    <main class="main_contacto">
-      <h1>Formulario</h1>
-      <h2>Dejanos tus datos:</h2>
-
-           <form>
-
-                  <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Apellido</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Gomez">
+    <main id="contacto">
+      <h1><span>Contactate con nosotros</span></h1>
+      <section class="main_contacto" >
+        <section>
+               <form class="form">
+                  <div class="form-floating">
+                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                      <option value="1" selected>Atención al cliente</option>
+                      <option value="2">Problemas con la página</option>
+                      <option value="3">Problemas con la ropa</option>
+                    </select>
+                    <label for="floatingSelect">Asunto</label>
                   </div>
-
-                  <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Gonzalo">
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Correo electrónico</label>
                   </div>
-
-                  <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  <div class="form-floating">
+                    <input type="tel" class="form-control" id="floatingPassword" placeholder="3816******">
+                    <label for="floatingPassword">Telefono</label>
+                  </div>  
+                   <div class="form-check form-switch">
+                       <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
+                       <label class="form-check-label" for="flexSwitchCheckChecked">Aceptar terminos y condiciones</label>
+                   </div>
+                   <div class="form-floating">
+                    <textarea class="form-control" placeholder="Como podemos ayudarte?" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Mensaje</label>
                   </div>
-
-                  <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Telefono</label>
-                    <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="3816982291">
-                  </div>
-
-                  <select class="form-select" aria-label="Default select example">
-                    <option selected>Selecciona la forma de comunicación</option>
-                    <option value="1">Telefono</option>
-                    <option value="2">Email</option>
-                  </select>
-
-                  <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Opinión sobre la página</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
-                  </div>
-
-                  <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Opinión sobre la ropa</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
-                  </div>
-
-                  <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
-                    <label class="form-check-label" for="flexSwitchCheckChecked">Aceptar terminos y condiciones</label>
-                  </div>
-
-                  <input class="btn--enviar" type="submit" value="Enviar">
-                  <input class="btn--reset" type="reset" value="Reset">
-                  
-              </form>    
+                      <input class="btn--enviar" type="submit" value="Enviar">
+                      <input class="btn--reset" type="reset" value="Reset">
+                  </form>    
+             </section>
+             <aside class="informacion">
+               <h2>Informacion adicional</h2>
+               <span><a href="ubicación.html"><i class="fa fa-map-marker"></i>Lomas de Tafi</a></span>
+               <span><a href="https://wa.me/+543816239922" target="_blank"><i class="fa fa-phone"></i>Whatsapp</a></span>
+               <span><a href="mailto:wombatshowroom@gmail.com" target="_blank"><i class="fa fa-envelope-o"></i>Mail</a></span>
+            </aside>
+      </section >
     </main>
 
-    <footer class="col-12">  
-      <ul class="d-flex flex-row flex-wrap col-12">
+    <!-- FOOTER -->
+    <footer>
+      <section class="container__footer">
+          <article class="box__footer box__logo">
+              <figure class="logo">
+                  <img src="../img/wombatlogo.png" width="80px" height="150px" alt="Logo wombat">
+              </figure>
+          </article>
+          <article class="box__footer">
+              <h4>Soluciones</h4>
+              <a href="https://wa.me/+543816239922" target="_blank">Cambiar Prenda</a>
+              <a href="https://wa.me/+543816239922" target="_blank">Reportar problema</a>
+              <a href="https://wa.me/+543816239922" target="_blank">Ayuda</a>
+          </article>
 
-          <li class="col-xxl-4 col-xl-4 col-lg-5 col-md-6 col-sm-12 col-12">
-              <h3>Contacto</h3>
-              <a href="https://wa.me/+543816239922" target="_blank"><p>Whatsapp</p></a>
-              <a href="mailto:wombatshorwoom@gmail.com"><p>Email</p></a>
-          </li>
+          <article class="box__footer">
+              <h4>Nosotros</h4>
+              <a href="nosotros.html">Nosotros</a>
+              <a href="catalogo_remera.html">Verano '21</a>
+              <a href="catalogo_abrigo.html">Invierno '22</a>            
+          </article>
 
-          <li class="col-xxl-4 col-xl-4 col-lg-3 col-md-3 col-sm-12 col-12">
-              <h3>Redes sociales</h3>
-              <p><a href="https://www.instagram.com/wombat.showroom/" target="_blank">Instagram</a></p>
-              <p><a href="https://www.facebook.com/wombat.showroom.9/" target="_blank">Facebook</a></p>
-         </li>
+          <article class="box__footer redes">
+              <h4>Redes Sociales</h4>
+              <a href="https://www.facebook.com/wombat.showroom.9/" target="_blank"> <i class="fab fa-facebook-square"></i> Facebook</a>
+              <a href="https://wa.me/+543816239922" target="_blank"><i class="fab fa-whatsapp-square"></i> Whatsapp</a>
+              <a href="https://www.instagram.com/wombat.showroom/" target="_blank"><i class="fab fa-instagram-square"></i> Instagram</a>
+          </article>
 
-          <li class="col-xxl-4 col-xl-4 col-lg-3 col-md-3 col-sm-12 col-12">
-              <h3>Ayuda</h3>
-              <p><a href="https://wa.me/+543816239922" target="_blank">Asistencia online</a></p>
-              <p><a href="https://wa.me/+543816239922" target="_blank">Cambios</a></p>
-          </li>
+      </section>
 
-      </ul>
-</footer>
+      <section class="box__copyright">
+          <hr>
+          <p>Todos los derechos reservados © 2022 <b>Ali Lucas</b></p>
+      </section>
+  </footer>
 
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
