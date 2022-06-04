@@ -1001,6 +1001,7 @@ footer .box__copyright hr {
   }
 }
 
+/* TAMAÑO DE CARD DEL CATALOGO */
 @media all and (min-width: 320px) and (max-width: 760px) {
   .ropa {
     width: 80%;
