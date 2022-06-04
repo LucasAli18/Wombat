@@ -1000,4 +1000,11 @@ footer .box__copyright hr {
     margin-right: 1em;
   }
 }
+
+@media all and (min-width: 320px) and (max-width: 760px) {
+  .ropa {
+    width: 80%;
+    margin: 1em auto;
+  }
+}
 /*# sourceMappingURL=style.css.map */
