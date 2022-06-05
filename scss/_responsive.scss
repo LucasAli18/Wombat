@@ -113,8 +113,7 @@
     }
     
     .container__footer{
-        display: flex;
-        flex-direction: column;
+        @include flex-col;
         flex-wrap: wrap;
         max-width: 1200px;
         margin: auto;
@@ -122,8 +121,7 @@
     }
     
     .box__footer{
-        display: flex;
-        flex-direction: column;
+        @include flex-col;
         padding: .5em;
         h2{
             margin-bottom: .5em;
@@ -183,15 +181,13 @@
     /*NOSOTROS*/
 
     .section_nos{
-        display: flex;
-        flex-direction: column;
+        @include flex-col;
         align-items: center;
         flex-wrap: wrap;   
     }
     /* ACOMODAR LA CARD USUARIO PARA TELEFONO */
     .body{
-        display: flex;
-        flex-direction: column;
+        @include flex-col;
         justify-content: center;
         align-items: center;
         margin: 0 auto;
@@ -295,8 +291,7 @@
     }
     
     .actionbtn{
-        display: flex;
-        flex-direction: column;
+        @include flex-col;
         justify-content: space-between;
     }
     
@@ -359,8 +354,7 @@
     }
 
 .informacion{
-    display: flex;
-    flex-direction: column;
+    @include flex-col;
     justify-content: space-between;
     padding: 4em;
     height: 100%;

@@ -1,7 +1,6 @@
 /*PAG PRINCIPAL*/
 .main_index{
-    display: flex;
-    flex-direction: column;
+    @include flex-col;
     align-items: center;
 }
 
@@ -18,7 +17,7 @@
         font-size: 2em;
         }
     p{
-        font-family: 'Josefin Sans', sans-serif;
+        @include texto;
         }
 }
 
@@ -89,7 +88,7 @@
         font-family: 'Josefin Sans', sans-serif;
     }
     p{
-        font-family: 'Josefin Sans', sans-serif;
+       @include texto;
     }
 }
 

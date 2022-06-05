@@ -1,6 +1,12 @@
 @charset "UTF-8";
 /* COLOCO LAS VARIABLES */
-/* MIXIN PARA TAMAÑOS */
+/* SOMBREADO DE LOS CONTENEDORES */
+/* REDONDEADO DE LAS IMG */
+/* MAPA DE PALETA DE COLORES */
+/* MIXIN*/
+/* TAMAÑOS */
+/* DISPLAY COLUM */
+/* TEXTOS */
 /* CONFIGURAR NAVBAR */
 .navbar {
   background-color: #f3dbc362 !important;
@@ -34,7 +40,7 @@
 
 .dropdown-menu {
   background-color: #918f8f2d;
-  text-align: center;
+  text-align: end;
 }
 
 /* CONFIG DEL FOOTER */
@@ -144,6 +150,7 @@ footer .box__copyright hr {
 
 .main_nos p {
   font-family: 'Josefin Sans', sans-serif;
+  padding: .1em;
 }
 
 .section_nos {
@@ -211,6 +218,7 @@ footer .box__copyright hr {
 
 .ubicacion p {
   font-family: 'Josefin Sans', sans-serif;
+  padding: .1em;
 }
 
 /**CONTACTO**/
@@ -505,6 +513,16 @@ footer .box__copyright hr {
   margin: .5em;
   width: 30%;
   height: 40vh;
+}
+
+.catalogo_index figure:hover > figcaption {
+  transition: all 1s ease;
+  background-color: black;
+}
+
+.catalogo_index figure:hover > figcaption a {
+  color: white;
+  transition: all 1s ease;
 }
 
 .catalogo_index img {

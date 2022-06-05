@@ -9,8 +9,7 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 .informacion{
-    display: flex;
-    flex-direction: column;
+    @include flex-col;
     justify-content: space-between;
     padding: 4em;
     height: 100%;
@@ -82,6 +81,5 @@
 /* --------------------------- */
 
 .informacion{
-    display: flex;
-    flex-direction: column;
+    @include flex-col;
 }

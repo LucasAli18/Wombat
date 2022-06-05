@@ -12,7 +12,6 @@
             font-family: 'Josefin Sans', sans-serif;
         }
 } 
-
 .navbar-brand{
     font-size: 1.5em;
     font-weight: 600;
@@ -30,7 +29,7 @@
 }
 .dropdown-menu{
     background-color: #918f8f2d;
-    text-align: center;
+    text-align: end;
 }
 /* CONFIG DEL FOOTER */
 footer{
@@ -48,8 +47,7 @@ footer{
         margin: auto;
           }
     .box__footer{
-            display: flex;
-            flex-direction: column;
+            @include flex-col;
             padding: 1em;
             .logo img{
                 width: 180px;

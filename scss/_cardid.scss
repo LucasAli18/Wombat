@@ -1,7 +1,6 @@
 /* CARD USUARIO CON INFORMACION DE LOS DUEÑOS */
 .body{
-    display: flex;
-    flex-direction: column;
+    @include flex-col;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
