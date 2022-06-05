@@ -836,7 +836,7 @@ footer .box__copyright hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin: 2em auto;
   }
   .card_nos {
     position: relative;
